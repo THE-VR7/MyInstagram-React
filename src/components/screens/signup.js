@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 import {Link,useHistory } from 'react-router-dom';
 import M from 'materialize-css'; 
-
 const Signup = ()=>{
     const history = useHistory()
     const [name,setName]=useState("")
