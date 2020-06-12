@@ -29,7 +29,7 @@ const Login = ()=>{
         })
       }).then(res=>res.json())
       .then(data=>{
-        console.log(data)
+        // console.log(data)
         if(data.error)
         {
            M.Toast.dismissAll();
