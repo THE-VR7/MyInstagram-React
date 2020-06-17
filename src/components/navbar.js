@@ -10,7 +10,8 @@ const Navbar = ()=>{
       if(state)
       {
         return [ 
-          <li key="1"><Link to="/profile">Profile</Link></li>,
+        <li key="4"><Link to="/myfollowingpost">My Following Posts</Link></li>,
+        <li key="1"><Link to="/profile">Profile</Link></li>,
         <li key="2"><Link to="/createpost">Create Post</Link></li>,
         <li key="3">
           <button className="btn  #c62828 red darken-3" 

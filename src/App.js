@@ -4,9 +4,11 @@ import Navbar from './components/navbar';
 import {BrowserRouter,Route,Switch,useHistory} from 'react-router-dom';
 import Home from './components/screens/home';
 import Profile from './components/screens/profile';
+import UserProfile from './components/screens/UserProfile';
 import Login from './components/screens/login';
 import Signup from './components/screens/signup';
 import Createpost from './components/screens/createpost';
+import SubsPosts from './components/screens/subspost';
 import {initialstate,reducer} from './reducers/UserReducer';
 
 export  const Usercontext = createContext()
@@ -31,7 +33,7 @@ const Routing = ()=>{
     <Route exact path="/" >
       <Home />
     </Route>
-    <Route path="/profile" >
+    <Route exact path="/profile" >
       <Profile />
     </Route>
     <Route path="/login" >
@@ -42,6 +44,12 @@ const Routing = ()=>{
     </Route>
     <Route path="/createpost" >
       <Createpost />
+    </Route>
+    <Route path="/profile/:userid" >
+      <UserProfile />
+    </Route>
+    <Route path="/myfollowingpost" >
+      <SubsPosts />
     </Route>
   </Switch>
   )
